@@ -1,4 +1,4 @@
-/* Global Styles */
+
 body {
   background: linear-gradient(141deg, #5a88a4 0%, #2ab4e8 51%, #2297c7 75%);
   font-family: 'Noto Sans', Helvetica, sans-serif;
@@ -7,12 +7,13 @@ body {
   padding: 20px;
   min-height: 100vh;
   margin: 0;
+  box-sizing: border-box;
 }
 
 header {
   text-align: center;
   margin: 10px 0;
-  background-color: #232f3e; /* Darker header like Amazon */
+  background-color: #232f3e; 
   color: white;
   padding: 20px;
   border-radius: 8px;
@@ -36,17 +37,17 @@ header .link {
 
 header .link:hover,
 header .link:active {
-  background-color: #ff9900; /* Amazon-like hover effect */
+  background-color: #ff9900; 
   color: white;
 }
 
-/* Main content section */
+
 .main-content {
   width: 80%;
   margin: 30px auto;
 }
 
-/* Book list layout */
+
 .book-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -71,7 +72,7 @@ header .link:active {
 .book-title {
   font-size: 1.4rem;
   font-weight: bold;
-  color: #131921; /* Amazon-like dark title */
+  color: #131921; 
   margin-bottom: 10px;
 }
 
@@ -87,7 +88,7 @@ header .link:active {
   margin-bottom: 10px;
 }
 
-/* Button styles */
+
 .btn {
   font-size: 14px;
   padding: 8px 16px;
@@ -119,7 +120,7 @@ header .link:active {
   outline: none;
 }
 
-/* Form Styles */
+
 .main-form {
   width: 60%;
   margin: auto;
@@ -144,9 +145,9 @@ header .link:active {
   box-shadow: 0 0 5px rgba(255, 153, 0, 0.5);
 }
 
-/* Submit Button */
+
 .submit-btn {
-  background-color: #ff9900;
+  background-color: #f7900a;
   color: white;
   padding: 15px 30px;
   border-radius: 6px;
@@ -156,10 +157,10 @@ header .link:active {
 }
 
 .submit-btn:hover {
-  background-color: #e07b00;
+  background-color: #e79a0a;
 }
 
-/* Message Styles */
+
 .errorMsg {
   color: #ff0000;
   background-color: #fff0f0;
@@ -176,7 +177,6 @@ header .link:active {
   font-size: 1.1rem;
 }
 
-/* Responsive Layout */
 @media (max-width: 768px) {
   header {
     padding: 15px;

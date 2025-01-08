@@ -1,40 +1,4 @@
-// import React from 'react';
-// import { Button, Card } from 'react-bootstrap';
-// import { useNavigate } from 'react-router-dom';  // Replace useHistory with useNavigate
 
-// const Book = ({
-//   id,
-//   bookname,
-//   author,
-//   price,
-//   quantity,
-//   date,
-//   handleRemoveBook
-// }) => {
-//   const navigate = useNavigate(); // Use the navigate function
-
-//   return (
-//     <Card style={{ width: '18rem' }} className="book">
-//       <Card.Body>
-//         <Card.Title className="book-title">{bookname}</Card.Title>
-//         <div className="book-details">
-//           <div>Author: {author}</div>
-//           <div>Quantity: {quantity} </div>
-//           <div>Price: {price} </div>
-//           <div>Date: {new Date(date).toDateString()}</div>
-//         </div>
-//         <Button variant="primary" onClick={() => navigate(`/edit/${id}`)}> {/* Updated navigation */}
-//           Edit
-//         </Button>{' '}
-//         <Button variant="danger" onClick={() => handleRemoveBook(id)}>
-//           Delete
-//         </Button>
-//       </Card.Body>
-//     </Card>
-//   );
-// };
-
-// export default Book;
 
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
@@ -53,19 +17,19 @@ const Book = ({ id, bookname, author, price, quantity, date, handleRemoveBook })
           <div>Price: {price}</div>
           <div>Date: {new Date(date).toDateString()}</div>
         </div>
-        {/* Edit Button */}
+        
         <Button
           variant="primary"
           className="btn btn-primary"
-          onClick={() => navigate(`/edit/${id}`)}  // navigate to edit page
+          onClick={() => navigate(`/edit/${id}`)}  
         >
           Edit
         </Button>{' '}
-        {/* Delete Button */}
+      
         <Button
           variant="danger"
           className="btn btn-danger"
-          onClick={() => handleRemoveBook(id)} // call delete function
+          onClick={() => handleRemoveBook(id)} 
         >
           Delete
         </Button>
