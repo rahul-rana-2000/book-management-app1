@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/book-management-app/', 
-  plugins: [react()]
+   
+  plugins: [react()],
+  base: "/book-management-app1",
 })
